@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./styles/index/index.css">
+  <title>Бганцова о кино</title>
+</head>
+<body>
+
+  <header>
+    <div class="header">
+      <div class="header__wrapper header__wrapper--top">
+        <div class="camera"> 
+          <div class="bottom-dark"></div> 
+          <div class="camera__circle"></div>
+          <div class="line"></div>
+          <div class="camera__objective-1"></div>
+          <div class="camera__objective-2"></div>
+          <div class="camera__objective-3"></div>
+          <div class="camera__objective-4"></div> 
+        </div>
+        <ul class="navbar">
+          <li class="navbar__item item"><a href="#film-lists">Списки фильмов</a></li>
+          <li class="navbar__item item"><a href="#description">Описания последних просмотренных фильмов</a></li>
+          <li class="navbar__item item"><a href="#covers">Обязательные к просмотру</a></li>
+        </ul>
+        <button class="menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
+      </div>
+      <div class="header__wrapper header__wrapper--bottom">
+        <ul class="navbar--bottom">
+          <li class="navbar__item item--bottom"><a href="#film-lists">Списки фильмов</a></li>
+          <li class="navbar__item item--bottom"><a href="#description">Описания последних просмотренных фильмов</a></li>
+          <li class="navbar__item item--bottom"><a href="#covers">Обязательные к просмотру</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="film-lists">
+    <div class="film-lists__wrapper wrapper">
+      <h2 class="film-lists__title title" id="film-lists">Списки фильмов</h2>
+      <div class="film-lists__content content">
+        <div class="content__wrapper read">
+          <h3 class="content__subtitle subtitle">Недавно просмотренные</h3>
+          <ul class="content__lists lists">
+            <li class="lists__item item">
+              <img src="./assets/favicon/film-strip-valentines-day-svgrepo-com.svg" alt="иконка черно-белая" class="item__img">
+              <p class="item__text">Тристан и Изольда</p>
+            </li>
+            <li class="lists__item item">
+              <img src="./assets/favicon/film-strip-valentines-day-svgrepo-com.svg" alt="иконка черно-белая" class="item__img">
+              <p class="item__text">Свет в океане</p>
+            </li>
+            <li class="lists__item item">
+              <img src="./assets/favicon/film-strip-valentines-day-svgrepo-com.svg" alt="иконка черно-белая" class="item__img">
+              <p class="item__text">Уроки фарси</p>
+            </li>
+          </ul>
+          <button class="button"><a href="#description">К описаниям</a></button>
+        </div>
+        <div class="content__wrapper">
+          <h3 class="content__subtitle subtitle">К обязательному просмотру</h3>
+          <ul class="content__lists lists">
+            <li class="lists__item item">
+              <img src="./assets/favicon/film-strip-svgrepo-com.svg" alt="иконка цветная" class="item__img">
+              <p class="item__text">Честная куртизанка</p>
+            </li>
+            <li class="lists__item item">
+              <img src="./assets/favicon/film-strip-svgrepo-com.svg" alt="иконка цветная" class="item__img">
+              <p class="item__text">Побег из Шоушенка</p>
+            </li>
+            <li class="lists__item item">
+              <img src="./assets/favicon/film-strip-svgrepo-com.svg" alt="иконка цветная" class="item__img">
+              <p class="item__text">Зелёная книга</p>
+            </li>
+          </ul>
+          <button class="button"><a href="#covers">К обложкам</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="insert"></section>
+
+  <section class="description">
+    <div class="description__wrapper wrapper">
+      <h2 class="description__title title" id="description">Описания последних просмотренных фильмов</h2>
+      <div class="description__card card">
+        <div class="card__wrapper">
+          <img src="./assets/img/covers/tristanandisolde_2.jpg" alt="постер фильма" class="cover">
+          <div class="card__text">
+            <div class="card__title">Тристан и Изольда</div>
+            <div class="card__subtitle">«До Ромео и Джульетты были...»</div>
+            <div class="card__subtitle">2005</div>
+            <div class="card__main-text">Тристан, воспитанный лордом Марком, сражается с армией ирландского короля. Однажды у ирландских берегов его находит дочь короля Изольда. Между ними зарождается любовь. Король собирается выдать свою дочь замуж за одного из британских лордов, Тристан побеждает в турнире. Теперь Изольда должна достаться лорду Марку.</div>
+          </div>
+        </div>
+      </div>
+      
+     <div class="description__card card">
+        <div class="card__wrapper">
+          <img src="./assets/img/covers/farsi.jpg" alt="постер фильма" class="cover">
+          <div class="card__text">
+            <div class="card__title">Уроки фарси</div>
+            <div class="card__subtitle">«Человек видит, что солнце медленно садится. Но он все равно пугается, вдруг наставшей темноты»</div>
+            <div class="card__main-text">
+              1942 год, оккупированная Европа. Оказавшись в концлагере, бельгиец еврейского происхождения Жиль Кремье выдает себя за перса — для него это единственная возможность остаться в живых. Довольные таким редким уловом немецкие солдаты приводят Жиля к концлагерному повару Клаусу Коху, который мечтает, как только закончится война, уехать в Иран и открыть там ресторан. Кох ищет настоящего перса, который научит его говорить на фарси. Так начинается история Жиля Кремье и Клауса Коха — еврея и немца, узника и тюремщика, учителя и ученика.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="covers">
+    <div class="covers__wrapper wrapper">
+      <h2 class="covers__title title" id="covers">Постеры обязательных к просмотру фильмов</h2>
+      <div class="covers__list list">
+        <div class="covers__union union">
+          <img src="./assets/img/covers/107689.jpg" alt="постер фильма" class="union__img">
+          <div class="union__text">
+            <div class="union__title">Честная куртизанка</div>
+            <div class="union__subtitle">
+              «A life without compromise»</div>
+            <div class="union__subtitle">1998</div>
+          </div>
+        </div>
+        <div class="covers__union union">
+          <img src="./assets/img/covers/the-shawshank-redemption-films-photo-u5.jpeg" alt="постер фильма" class="union__img">
+          <div class="union__text">
+            <div class="union__title">Побег из Шоушенка</div>
+            <div class="union__subtitle">
+              «Страх - это кандалы. Надежда - это свобода»</div>
+            <div class="union__subtitle">1994</div>
+          </div>
+        </div>
+        <div class="covers__union union">
+          <img src="./assets/img/covers/scale_1200.jpeg" alt="постер фильма" class="union__img">
+          <div class="union__text">
+            <div class="union__title">Зелёная книга</div>
+            <div class="union__subtitle">«Inspired by a True Friendship»</div>
+            <div class="union__subtitle">2018</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="film-lists">
+    <div class="film-lists__wrapper wrapper">
+      <div class="film-lists__content content">
+        <div class="content__wrapper read">
+          <h3 class="content__subtitle subtitle">Задания</h3>
+          <ul class="content__lists lists">
+            <li class="lists__item item">
+              <img src="./assets/favicon/film-strip-valentines-day-svgrepo-com.svg" alt="иконка открытой книги" class="item__img">
+              <a href="./task-pages/logo.html">Логотип</a>
+            </li>
+            <li class="lists__item item">
+              <img src="./assets/favicon/film-strip-valentines-day-svgrepo-com.svg" alt="иконка открытой книги" class="item__img">
+              <a href="./task-pages/picture.html">Рисунок CSS</a>
+            </li>
+            <li class="lists__item item">
+              <img src="./assets/favicon/film-strip-valentines-day-svgrepo-com.svg" alt="иконка открытой книги" class="item__img">
+              <a href="./task-pages/flex.html">Flex</a>
+            </li>
+            <li class="lists__item item">
+              <img src="./assets/favicon/film-strip-valentines-day-svgrepo-com.svg" alt="иконка открытой книги" class="item__img">
+              <a href="./task-pages/phrases.html">Фразы</a>
+            </li>
+            <li class="lists__item item">
+              <img src="./assets/favicon/film-strip-valentines-day-svgrepo-com.svg" alt="иконка открытой книги" class="item__img">
+              <a href="./task-pages/animals.html">Перетаскивание картинок</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+     </div>
+   </section>
+   
+   <!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+</html>
+
+
+  <footer class="footer">
+    <div class="footer__wrapper wrapper">
+      <img src="./assets/favicon/clapperboard_cinema_icon_190842.png" alt="логотип" class="footer__logo logo">
+      <div class="footer__contacts contacts">
+        <h4 class="footer__subtitle">Контакты</h4>
+        <ul class="contacts__listing listing">
+          <li class="listing__item">
+            <img src="./assets/favicon/mail.svg" alt="иконка" class="listing__icon">
+            <a href="mailto:abgantsova@hr-link.ru?subject=Вопрос по Сайту"><span class="listing__text">Yandex</span></a>
+          </li>
+          <li class="listing__item">
+            <img src="./assets/favicon/telegram.svg" alt="иконка" class="listing__icon">
+            <a href="https://t.me/hackerstime989"><span class="listing__text">Telegram</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__social social">
+        <h4 class="footer__subtitle">Социальные сети</h4>
+        <ul class="social-listing listing">
+          <li class="listing__item">
+            <img src="./assets/favicon/vk.svg" alt="иконка" class="listing__icon">
+            <span class="listing__text">VK</span>
+          </li>
+          <li class="listing__item">
+            <img src="./assets/favicon/instagram.svg" alt="иконка" class="listing__icon">
+            <span class="listing__text">Instagram</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="./js/index.js"></script>
+</html>

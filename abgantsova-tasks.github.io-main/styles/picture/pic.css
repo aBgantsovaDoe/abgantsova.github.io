@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: black;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*
+  ==============================================
+  Header
+  ==============================================
+*/
+.header {
+  background-color: #ED7D31;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-transform: uppercase;
+}
+.header__wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__wrapper--bottom {
+  display: none;
+}
+.header__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.header__logo {
+  height: 53px;
+}
+
+.menu-button {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar__item {
+  list-style-type: none;
+  margin-left: 40px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/*
+  ==============================================
+  Picture
+  ==============================================
+*/
+.picture {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 15px auto;
+  position: relative;
+}
+
+.smoke-1, .smoke-2, .smoke-3 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(white, rgb(16, 167, 213));
+}
+
+.smoke-1 {
+  left: 24px;
+  bottom: 90px;
+}
+
+.smoke-2 {
+  left: 40px;
+  bottom: 103px;
+}
+
+.smoke-3 {
+  left: 60px;
+  bottom: 108px;
+}
+
+.car {
+  left: 0;
+  bottom: 0;
+  height: 75px;
+  width: 75px;
+  background-color: rgba(221, 33, 16, 0.348);
+  z-index: -1;
+}
+
+.tube {
+  position: absolute;
+  width: 10px;
+  height: 35px;
+  left: 23px;
+  bottom: 50px;
+  background: linear-gradient(to right, rgba(255, 127, 80, 0.114), coral);
+}
+
+.cabin {
+  position: absolute;
+  border-radius: 5px;
+  height: 28px;
+  width: 37px;
+  left: 40px;
+  bottom: 47px;
+  background-color: red;
+}
+
+.window {
+  position: absolute;
+  border-radius: 5px;
+  height: 14px;
+  width: 24px;
+  left: 50px;
+  bottom: 54px;
+  background-color: white;
+}
+
+.headlight {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 5px;
+  bottom: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.item-1, .item-2, .item-3, .item-4 {
+  width: 60px;
+  height: 16px;
+  position: absolute;
+}
+
+.item-1 {
+  left: 20px;
+  bottom: 35px;
+  background-color: greenyellow;
+}
+
+.item-2 {
+  left: 20px;
+  bottom: 19px;
+  background-color: orange;
+}
+
+.item-3 {
+  left: 82px;
+  bottom: 35px;
+  background-color: yellow;
+}
+
+.item-4 {
+  left: 82px;
+  bottom: 19px;
+  background-color: rgb(0, 229, 255);
+}
+
+.wheel-1, .wheel-2, .wheel-3, .wheel-4 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  bottom: 11px;
+  border-radius: 50%;
+  background-color: brown;
+}
+
+.triangle-1, .triangle-2, .triangle-3, .triangle-4 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 3px;
+  left: 3px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 7px solid orange;
+}
+
+.wheel-1 {
+  left: 27px;
+}
+
+.wheel-2 {
+  left: 57px;
+}
+
+.wheel-3 {
+  left: 89px;
+}
+
+.wheel-4 {
+  left: 119px;
+}/*# sourceMappingURL=pic.css.map */

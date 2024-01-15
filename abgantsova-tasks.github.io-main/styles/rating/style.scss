@@ -1,0 +1,90 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:700,800);
+$light: #6ED0F6;
+$main: #079BCF;
+$dark: #007BA5;
+
+$light-gr: #6ef673;
+$main-gr: #11cf07;
+$dark-gr: #0ea500;
+
+
+html, body { margin: 0; }
+ul { 
+  list-style: none;
+  padding: 0;
+}
+
+:focus { outline: none; }
+::-webkit-input-placeholder { color: #DEDFDF; }
+::-moz-placeholder { color: #DEDFDF; }
+:-moz-placeholder { color: #DEDFDF; }
+::-ms-input-placeholder { color: #DEDFDF; }
+
+body {
+  display: flex;
+  background: #6ED0F6;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+.title {
+  font-size: 32px;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 27px;
+}
+button {
+  background: $main;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-size: 27px;
+  height: 72px;
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: all .3s cubic-bezier(.6,0,.4,1);
+}
+
+
+body.green-mode {
+  background: #6ef673;
+}
+.blue, .green {
+  width: 25px; 
+  height: 25px; 
+  border-radius: 50%;
+}
+.blue {
+  background-color:#6ED0F6;
+}
+.green {
+  background-color:#6ef673;
+}
+button.green-mode {
+  background: $main-gr;
+}
+button.green-mode:hover {
+  background: $dark-gr;
+}
+#theme {
+  display: flex;
+  background:none;
+  width: 70px;
+  height: 27px;
+  margin: 0;
+  border:none;
+}

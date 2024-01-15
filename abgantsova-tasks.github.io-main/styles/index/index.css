@@ -1,0 +1,672 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: black;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*
+  ==============================================
+  Header
+  ==============================================
+*/
+.header {
+  background-color: #ED7D31;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-transform: uppercase;
+}
+.header__wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__wrapper--bottom {
+  display: none;
+}
+.header__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.header__logo {
+  height: 53px;
+}
+
+.menu-button {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar__item {
+  list-style-type: none;
+  margin-left: 40px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/*
+  ==============================================
+  Logo
+  ==============================================
+*/
+
+.bottom-dark {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  width: 18px;
+  height: 5px;
+  background: #525252;
+  left: 68px;
+  top: -5px;
+  position:absolute;
+}
+
+.camera {
+  position: relative;
+  min-width: 106.023px;
+  height: 66.553px;
+  background: #000;
+  border-radius: 15px;
+  top: 10%;
+}
+
+.camera__circle {
+ position: absolute;
+ width: 5px;
+ height: 5px;
+ left: 69%;
+ top: 13%;
+ border-radius: 5px;
+ border: 1px solid #000;
+ background: #FF0404;
+ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.camera__objective-1, .camera__objective-2,.camera__objective-3, .camera__objective-4{
+position: absolute;
+border-radius: 100px;
+display: flex;
+top: 50%;
+left: 40%;
+transform: translate(-50%, -50%);
+}
+
+.camera__objective-1{
+background: #838383;
+width:  50px;
+height: 50px;
+}
+
+.camera__objective-2{
+  background: #D9D9D9;
+  width:  45px;
+  height: 45px;
+  }
+.camera__objective-3{
+    background: #DFD367;
+    width:  35px;
+    height: 35px;
+  }
+.camera__objective-4{
+
+      background: #000;
+      width:  20px;
+      height: 20px;
+  }
+.line{
+  position: absolute;
+  width: 4px;
+  height: 43px;
+  flex-shrink: 0;
+  background: #9B7D7D;
+  left: 85%;
+  top: 17%;
+  border-radius: 5px;
+}
+/*
+  ==============================================
+  Film lists
+  ==============================================
+*/
+.film-lists {
+  background-color: #6C5F5B;
+}
+.film-lists__wrapper {
+  padding-top: 27px;
+  padding-bottom: 70px;
+}
+.film-lists__content {
+  width: 50%;
+}
+.film-lists__title {
+  padding-bottom: 28px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.content__wrapper {
+  width: 36%;
+  margin: 0 auto;
+  padding: 38px 42px 46px 42px;
+  border-radius: 8px;
+  background-color: #BFB29E;
+}
+.content__subtitle {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.content__lists {
+  margin-bottom: 20px;
+}
+
+.lists {
+  font-size: 16px;
+}
+.lists__item {
+  line-height: 24px;
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+.item {
+  display: flex;
+}
+.item__text {
+  padding-left: 6px;
+}
+
+.button {
+  width: 100%;
+  bottom: 20px;
+  padding: 24px;
+  background-color: #ED7D31;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/*
+  ==============================================
+  Insert
+  ==============================================
+*/
+.insert {
+  background: linear-gradient(to bottom, rgba(144, 204, 244, 0.4), rgba(144, 204, 244, 0.4)), url("../../assets/img/vozmojen-li-idealnyi-kinosait-4.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 260px;
+}
+
+/*
+  ==============================================
+  Description
+  ==============================================
+*/
+.description {
+  background-color: #6C5F5B;
+}
+.description__wrapper {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.description__title {
+  padding-bottom: 40px;
+}
+.description__card {
+  margin: 0 auto 20px;
+}
+
+.card {
+  width: 80%;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 8px;
+}
+.card__wrapper {
+  padding: 12px 65px 13px 66px;
+  display: flex;
+}
+.card__title {
+  padding-bottom: 14px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ED7D31;
+}
+.card__subtitle {
+  padding-bottom: 14px;
+  text-align: end;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.cover {
+  width: 190px;
+  height: 300px;
+  padding-right: 32px;
+}
+
+/*
+  ==============================================
+  Сovers
+  ==============================================
+*/
+.covers {
+  background-color: #e1c8c054;
+}
+.covers__wrapper {
+  padding-top: 34px;
+  padding-bottom: 55px;
+}
+.covers__title {
+  padding-bottom: 40px;
+}
+.covers__list {
+  margin: 0 auto;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.union {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 255px;
+  height: 360px;
+  background: linear-gradient(to bottom, rgba(144, 204, 244, 0) 0%, #BFB29E 100%);
+}
+.union__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+.union__text {
+  font-weight: 700;
+  padding: 20px;
+}
+.union__title, .union__subtitle {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*
+  ==============================================
+  Tasks
+  ==============================================
+*/
+.tasks {
+  background-color: #BFB29E;
+  padding-bottom: 30px;
+}
+
+/*
+  ==============================================
+  Footer
+  ==============================================
+*/
+.footer {
+  background-color: #ED7D31;
+}
+.footer__wrapper {
+  width: 80%;
+  display: flex;
+  padding-top: 41px;
+  padding-bottom: 42px;
+  justify-content: space-around;
+}
+.footer__title, .footer__subtitle {
+  margin-bottom: 9px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.footer__logo {
+  height: 90px;
+}
+
+.listing {
+  list-style-type: none;
+}
+.listing__item {
+  display: flex;
+  margin-bottom: 16px;
+}
+.listing__text {
+  margin-left: 17px;
+}
+
+/*
+  ==============================================
+  Media
+  ==============================================
+*/
+@media (max-width: 992px) {
+  .header {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .header__logo {
+    height: 46px;
+  }
+  .film-lists__wrapper {
+    padding-bottom: 47px;
+  }
+  .insert {
+    height: 210px;
+  }
+  .description__wrapper {
+    padding-top: 28px;
+    padding-bottom: 10px;
+  }
+  .description__title {
+    padding-bottom: 25px;
+  }
+  .covers__wrapper {
+    padding-top: 16px;
+    padding-bottom: 26px;
+  }
+  .card__wrapper {
+    display: block;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .cover {
+    padding-right: 0;
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+  .union {
+    width: 226px;
+    height: 320px;
+  }
+  .union__text {
+    margin-top: 240px;
+    font-size: 14px;
+  }
+  .union__title, .union__subtitle {
+    font-size: inherit;
+  }
+  .footer__wrapper {
+    padding-top: 32px;
+    padding-bottom: 27px;
+  }
+  .footer__logo {
+    height: 44px;
+  }
+  .footer__subtitle {
+    font-size: 16px;
+  }
+  .listing__item {
+    margin-bottom: 12px;
+  }
+  .listing__icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media (max-width: 860px) {
+  .union {
+    width: 205px;
+    height: 290px;
+  }
+  .union__text {
+    margin-top: 205px;
+    margin-left: 15px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    width: 89%;
+  }
+  .header {
+    font-size: 14px;
+  }
+  .header__logo {
+    height: 40px;
+  }
+  .film-lists__title {
+    padding-bottom: 20px;
+  }
+  .content__wrapper {
+    padding: 30px 36px 38px 36px;
+  }
+  .button {
+    padding: 16px;
+  }
+  .card {
+    width: 90%;
+  }
+  .card__title {
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .card__subtitle {
+    padding-bottom: 10px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .covers__title {
+    padding-bottom: 20px;
+  }
+  .covers__union {
+    margin-bottom: 14px;
+  }
+  .union {
+    width: 198px;
+    height: 280px;
+  }
+  .union__text {
+    margin-top: 200px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 680px) {
+  * {
+    font-size: 13px;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .header__logo {
+    height: 30px;
+  }
+  .navbar__item {
+    margin-left: 12px;
+  }
+  .film-lists__wrapper {
+    padding-top: 16px;
+    padding-bottom: 30px;
+  }
+  .film-lists__title {
+    padding-bottom: 13px;
+  }
+  .content__wrapper {
+    padding: 22px 25px;
+  }
+  .item__img {
+    width: 20px;
+    height: auto;
+  }
+  .lists__item {
+    line-height: 20px;
+  }
+  .button {
+    padding: 12px;
+    line-height: 19px;
+  }
+  .insert {
+    height: 160px;
+  }
+  .description__wrapper {
+    padding-top: 20px;
+    padding-bottom: 2px;
+  }
+  .description__title {
+    padding-bottom: 13px;
+  }
+  .description__card {
+    margin-bottom: 10px;
+  }
+  .card__title {
+    padding-bottom: 8px;
+    font-size: 18px;
+    line-height: 19px;
+  }
+  .card__subtitle {
+    padding-bottom: 8px;
+    font-size: 15px;
+    line-height: 16px;
+  }
+  .cover {
+    width: 160px;
+    height: auto;
+    margin: 0 1em 0em 0;
+  }
+  .union {
+    width: 170px;
+    height: 240px;
+  }
+  .union__text {
+    margin-top: 150px;
+    font-size: 11px;
+  }
+  .footer__title {
+    font-size: 21px;
+  }
+}
+@media (max-width: 580px) {
+  .content {
+    display: block;
+  }
+  .content__wrapper {
+    width: 80%;
+    margin: 8px auto;
+  }
+  .list {
+    display: block;
+  }
+  .union {
+    width: 80%;
+    margin: 12px auto;
+  }
+  .card__wrapper {
+    padding: 12px 20px;
+  }
+  .cover {
+    width: 47%;
+  }
+  .footer__wrapper {
+    display: block;
+  }
+  .footer__logo {
+    width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__subtitle {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .header__wrapper {
+    align-items: center;
+  }
+  .header__logo {
+    height: 34px;
+  }
+  .mobile {
+    display: block;
+  }
+  .menu-button {
+    display: flex;
+    width: 24px;
+    height: 15px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: none;
+    background-color: #ED7D31;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbar--bottom {
+    display: block;
+  }
+  .item--bottom {
+    margin-top: 12px;
+    text-align: center;
+    line-height: 14px;
+  }
+}
+@media (max-width: 400px) {
+  .cover {
+    float: none;
+    width: 100%;
+  }
+  .card__title {
+    padding-top: 10px;
+  }
+  .footer__logo {
+    width: 45%;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,27 @@
+$light-blue: #90CCF4;
+$dark-blue: #5DA2D5;
+$red: #F78888;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  color: black;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.title {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.subtitle{
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}

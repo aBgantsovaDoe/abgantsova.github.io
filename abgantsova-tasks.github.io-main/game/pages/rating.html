@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рейтинг</title>
+  <link rel="stylesheet" href="../styles/rating/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h2 class="title">Рейтинг</h2>
+    <ul class="list"></ul>
+    <a href="../pages/authorization.html"><button>Пройти игру</button></a>
+    <button id="theme">
+      <div class="blue"></div>
+      <div class="green"></div>
+    </button>
+  </div>
+</body>
+<template id="list-item-template">
+  <li class="item">
+    <span class="name"></span>
+    <span class="score"></span>
+  </li>
+</template>
+<script src="../js/theme.js"></script>
+<script src="../js/rating.js" type="module"></script>
+</html>

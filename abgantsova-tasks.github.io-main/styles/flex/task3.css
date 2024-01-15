@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: black;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*
+  ==============================================
+  Header
+  ==============================================
+*/
+.header {
+  background-color: #ED7D31;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-transform: uppercase;
+}
+.header__wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__wrapper--bottom {
+  display: none;
+}
+.header__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.header__logo {
+  height: 53px;
+}
+
+.menu-button {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar__item {
+  list-style-type: none;
+  margin-left: 40px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/*
+  ==============================================
+  Flex
+  ==============================================
+*/
+.title {
+  text-align: center;
+}
+
+.wrapper {
+  margin: 15px auto;
+  width: 200px;
+  display: inline;
+  justify-content: space-between;
+}
+
+.content {
+  position: relative;
+  border: 1px solid black;
+  width: 200px;
+  display: flex;
+  height: 200px;
+  background-image: url("../../assets/img/flex/relax2.jpg");
+  background-size: contain;
+  overflow: hidden;
+}
+
+
+
+.tree {
+  position: absolute;
+  width: 59%;
+  bottom: 13px;
+}
+
+.text {
+  display: none;
+  position: absolute;
+  font-weight: 800;
+}
+.text--static {
+  top: 20px;
+  text-align: center;
+  color: #1a840c;
+}
+.text--moving {
+  top: 87px;
+  left: 90px;
+  font-size: 12px;
+  color: #d48007;
+  transform: rotate(20deg);
+}
+
+.fox {
+  display: none;
+  position: absolute;
+  width: 44%;
+  bottom: 13px;
+}
+.fox--run {
+  right: -73px;
+}
+.fox--stand {
+  right: 19px;
+}
+
+.sun {
+  display: none;
+  position: absolute;
+  width: 23%;
+  top: 20px;
+}
+
+@-webkit-keyframes fox-run {
+  100% {
+    right: 19px;
+  }
+}
+
+@keyframes fox-run {
+  100% {
+    right: 19px;
+  }
+}
+/*
+.content:hover {
+  border: 5px solid red;
+  border-radius: 50px;
+--} */
+.content:hover .text--static {
+  display: block;
+}
+.content:hover .fox--run {
+  display: block;
+  -webkit-animation: fox-run 3s linear forwards;
+          animation: fox-run 3s linear forwards;
+}
+
+@-webkit-keyframes sun-moving {
+  0% {
+    left: 0;
+    top: 18px;
+  }
+  5% {
+    left: 0;
+    top: 22px;
+  }
+  10% {
+    left: 0;
+    top: 18px;
+  }
+  90% {
+    left: 156px;
+    top: 18px;
+  }
+  95% {
+    left: 156px;
+    top: 22px;
+  }
+  100% {
+    left: 156px;
+    top: 18px;
+  }
+}
+
+@keyframes sun-moving {
+  0% {
+    left: 0;
+    top: 18px;
+  }
+  5% {
+    left: 0;
+    top: 22px;
+  }
+  10% {
+    left: 0;
+    top: 18px;
+  }
+  90% {
+    left: 156px;
+    top: 18px;
+  }
+  95% {
+    left: 156px;
+    top: 22px;
+  }
+  100% {
+    left: 156px;
+    top: 18px;
+  }
+}
+.content:active .text--static {
+  display: none;
+}
+.content:active .text--moving {
+  display: block;
+}
+.content:active .fox--run {
+  display: none;
+}
+.content:active .fox--stand {
+  display: block;
+}
+.content:active .sun {
+  display: block;
+  -webkit-animation: sun-moving 2s linear infinite alternate;
+          animation: sun-moving 2s linear infinite alternate;
+}

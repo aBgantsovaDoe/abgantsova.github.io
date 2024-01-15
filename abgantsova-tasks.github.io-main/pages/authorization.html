@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авторизация</title>
+  <link rel="stylesheet" href="../styles/authorization/style.css">
+</head>
+<body>
+  <form id="authorization">
+    <input id="easy" name="difficulty" type="radio" value="easy" checked>
+    <label for="easy">Легко</label>
+    <input id="hard" name="difficulty" type="radio" value="hard">
+    <label for="hard">Сложно</label>
+    <div id="wrapper">
+      <div id="arrow"></div>
+      <input id="name" placeholder="Имя пользователя" type="text">
+    </div>
+    <button id="submit" type="submit">
+        В игру
+    </button>
+    <button id="theme">
+      <div class="blue"></div>
+      <div class="green"></div>
+    </button>
+  </form>
+</body>
+<script src="../js/theme.js"></script>
+<script src="../js/authorization.js" type="module"></script>
+</html>

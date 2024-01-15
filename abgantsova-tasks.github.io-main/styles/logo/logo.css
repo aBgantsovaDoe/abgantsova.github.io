@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: black;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*
+  ==============================================
+  Header
+  ==============================================
+*/
+.header {
+  background-color: #ED7D31;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-transform: uppercase;
+}
+.header__wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__wrapper--bottom {
+  display: none;
+}
+.header__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.header__logo {
+  height: 53px;
+}
+
+.menu-button {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar__item {
+  list-style-type: none;
+  margin-left: 40px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/*
+  ==============================================
+  Logo
+  ==============================================
+*/
+
+.bottom-dark {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  width: 18px;
+  height: 5px;
+  background: #525252;
+  left: 68px;
+  top: -5px;
+  position:absolute;
+}
+
+.camera {
+  position: relative;
+  max-width: 106.023px;
+  height: 66.553px;
+  background: #000;
+  border-radius: 15px;
+  top: 10%;
+  flex-shrink: 0;
+  margin: auto;
+  top: 100px;
+}
+
+.camera__circle {
+ position: absolute;
+ width: 5px;
+ height: 5px;
+ left: 69%;
+ top: 13%;
+ border-radius: 5px;
+ border: 1px solid #000;
+ background: #FF0404;
+ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.camera__objective-1, .camera__objective-2,.camera__objective-3, .camera__objective-4{
+position: absolute;
+border-radius: 100px;
+display: flex;
+top: 50%;
+left: 40%;
+transform: translate(-50%, -50%);
+}
+
+.camera__objective-1{
+background: #838383;
+width:  50px;
+height: 50px;
+}
+
+.camera__objective-2{
+  background: #D9D9D9;
+  width:  45px;
+  height: 45px;
+  }
+.camera__objective-3{
+    background: #DFD367;
+    width:  35px;
+    height: 35px;
+  }
+.camera__objective-4{
+
+      background: #000;
+      width:  20px;
+      height: 20px;
+  }
+.line{
+  position: absolute;
+  width: 4px;
+  height: 43px;
+  flex-shrink: 0;
+  background: #9B7D7D;
+  left: 85%;
+  top: 17%;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=logo.css.map */

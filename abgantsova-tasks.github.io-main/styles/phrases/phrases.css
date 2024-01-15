@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: black;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*
+  ==============================================
+  Header
+  ==============================================
+*/
+.header {
+  background-color: #ED7D31;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  text-transform: uppercase;
+}
+.header__wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__wrapper--bottom {
+  display: none;
+}
+.header__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.header__logo {
+  height: 53px;
+}
+
+.menu-button {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar__item {
+  list-style-type: none;
+  margin-left: 40px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/*
+  ==============================================
+  Content
+  ==============================================
+*/
+.content {
+  margin: 0 auto;
+  width: 80%;
+  height: 200px;
+  background-color: bisque;
+}
+
+.buttons {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 7px;
+  background-color: orange;
+}
+
+.background-color1 {
+  background-color: #ffcccc;
+}
+
+.background-color2 {
+  background-color: #ccffcc;
+}
+
+#rand {
+  margin-top: 5px;
+}
+
+.onclick {
+  border-radius: 0;
+}
+/*# sourceMappingURL=phrases.css.map */
